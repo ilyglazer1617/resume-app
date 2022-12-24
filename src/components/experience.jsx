@@ -120,13 +120,13 @@ function Experience(props) {
           />
           <br />
           <div>
-            <Link to="/education">
+            <Link to="/start2/education">
               <button href="#" className="btn btn-outline-dark">
                 &laquo; Previous
               </button>
             </Link>
 
-            <Link to="/skills">
+            <Link to="/start2/skills">
               <button className="btn btn-outline-dark">Next &raquo;</button>
             </Link>
           </div>

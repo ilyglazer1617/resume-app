@@ -83,13 +83,13 @@ const Education = (props) => {
           />
           <br />
           <div>
-            <Link to="/aboutme">
+            <Link to="/start2/aboutme">
               <button href="#" className="btn btn-outline-dark">
                 &laquo; Previous
               </button>
             </Link>
 
-            <Link to="/experience">
+            <Link to="/start2/experience">
               <button className="btn btn-outline-dark">Next &raquo;</button>
             </Link>
           </div>

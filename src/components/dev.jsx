@@ -7,7 +7,7 @@ class Dev extends Component {
   render() {
     return (
       <Routes>
-        <Route path="/start2" element={<ResumeApp />} />
+        <Route path="/start2/*" element={<ResumeApp />} />
         <Route path="/" element={<Home />} />
       </Routes>
     );

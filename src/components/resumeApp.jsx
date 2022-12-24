@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import LiveView from "./liveView";
 import Question from "./question";
 import jsPDF from "jspdf";
+import "../App.css";
 import Home from "./home";
+import Footer from "./footer";
 class ResumeApp extends Component {
   state = {
     contact: [
@@ -63,6 +65,13 @@ class ResumeApp extends Component {
     border: "2px solid rgb(83, 79, 79)",
     backgroundColor: "white",
   };
+  footerStyle = {
+    position: "fixed",
+    top: "89.5vh",
+    width: "100%",
+    marginLeft: "0px",
+    height: "69px",
+  };
 
   render() {
     return (
@@ -92,6 +101,9 @@ class ResumeApp extends Component {
             aboutme={this.state.aboutme}
             Iskill={this.state.Iskill}
           />
+        </div>
+        <div style={this.footerStyle}>
+          <Footer />
         </div>
       </div>
     );

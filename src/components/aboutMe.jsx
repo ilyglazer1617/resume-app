@@ -56,13 +56,13 @@ function Aboutme(props) {
           </button>
           <br />
           <div style={{ gap: "1%" }}>
-            <Link to="/">
+            <Link to="/start2/">
               <button href="#" className="btn btn-outline-dark">
                 &laquo; Previous
               </button>
             </Link>
 
-            <Link to="/education">
+            <Link to="/start2/education/">
               <button className="btn btn-outline-dark">Next &raquo;</button>
             </Link>
           </div>
