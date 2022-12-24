@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import LiveView from "./liveView";
 import Question from "./question";
-import Finish from "./finish";
 import jsPDF from "jspdf";
-import "../App.css";
-
+import Home from "./home";
 class ResumeApp extends Component {
   state = {
     contact: [
@@ -47,11 +45,13 @@ class ResumeApp extends Component {
   styleB = {
     position: "fixed",
     top: "3vh",
-    left: "49vw",
+    left: "44vw",
     width: "50vw",
     height: "87vh",
-    border: "1px solid black",
-    backgroundColor: "beige",
+    border: "2px solid  rgb(83, 79, 79)",
+    paddingLeft: "2.5%",
+    paddingRight: "2.5%",
+    backgroundColor: "white",
   };
   styleC = {
     position: "fixed",
@@ -60,13 +60,13 @@ class ResumeApp extends Component {
     width: "35vw",
     height: "87%",
     overflow: "auto",
-    border: "1px solid black",
+    border: "2px solid rgb(83, 79, 79)",
     backgroundColor: "white",
   };
 
   render() {
     return (
-      <div class="conteiner">
+      <div>
         <div style={this.styleB}>
           <Question
             pushInfo={this.pushInfo}
@@ -97,7 +97,6 @@ class ResumeApp extends Component {
     );
   }
 
-  //!downlods the page to pdf
   downlod = () => {
     // window.print();
     // let h = this.styleC;
@@ -123,7 +122,6 @@ class ResumeApp extends Component {
     // this.setState({ height: this.styleC.height, width: this.styleC.width });
   };
 
-  //!push info about me
   pushAboutMe = (event, values) => {
     console.log(values);
     event.preventDefault();
@@ -132,8 +130,6 @@ class ResumeApp extends Component {
     console.log(this.state.aboutme);
     this.setState({ aboutme: this.state.aboutme });
   };
-
-  //!Posh languaege
   pushSkills3 = (event, values) => {
     console.log(values);
     event.preventDefault();
@@ -145,7 +141,6 @@ class ResumeApp extends Component {
       this.setState({ Iskill3: this.state.Iskill3 });
     }
   };
-  //!push code language
   pushSkills2 = (event, values) => {
     event.preventDefault();
     if (this.state.languages2.length < 3) {
@@ -156,7 +151,7 @@ class ResumeApp extends Component {
       this.setState({ languages2: this.state.languages2 });
     }
   };
-  //!push code language
+
   pushSkills = (event, values) => {
     console.log(values);
     event.preventDefault();
@@ -168,7 +163,7 @@ class ResumeApp extends Component {
       this.setState({ Iskill2: this.state.Iskill2 });
     }
   };
-  //!push education
+
   onsubmitED = (event, values) => {
     event.preventDefault();
     if (this.state.Ieducation < 3) {
@@ -180,17 +175,17 @@ class ResumeApp extends Component {
       this.setState({ Ieducation: this.state.Ieducation });
     }
   };
-  //!push expiriance
+
   pushExperience2 = (ev, values) => {
     ev.preventDefault();
     if (this.state.I < 3) {
-      console.log(values);
+      // console.log(values);
       this.state.experience.push({ ...values });
       this.setState({ experience: this.state.experience });
       console.log(this.state.experience);
       this.state.I++;
       this.setState({ I: this.state.I });
-      console.log(this.state.I);
+      // console.log(this.state.I);
     }
   };
   pushExperience = (ev, values) => {
@@ -201,7 +196,7 @@ class ResumeApp extends Component {
     this.setState({ experience: this.state.experience });
     console.log(this.state.experience);
   };
-  //!push contact
+
   pushInfo = (event, values) => {
     event.preventDefault();
     console.log(values);

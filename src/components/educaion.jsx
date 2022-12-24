@@ -1,7 +1,5 @@
 import { useFormik } from "formik";
 import { Link } from "react-router-dom";
-import Experience from "./experience";
-import Aboutme from "./aboutMe";
 
 const Education = (props) => {
   const formik = useFormik({
@@ -16,7 +14,17 @@ const Education = (props) => {
 
   return (
     <div>
-      <h1>Education</h1>
+      <p
+        style={{
+          display: "flex",
+          flexFlow: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="h2"
+      >
+        Education
+      </p>
       <form onSubmit={(event) => props.onsubmitED(event, formik.values)}>
         <div className="input-group mb-3">
           <span className="input-group-text" id="basic-addon1">
@@ -56,32 +64,35 @@ const Education = (props) => {
             required
           ></textarea>
         </div>
-
-        <div>
-          <Link to="/aboutme">
-            <button href="#" className="btn btn-primary">
-              &laquo; Previous
-            </button>
-          </Link>
-
-          <button type="submit" className="btn btn-success">
-            send{" "}
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <button type="submit" className="btn btn-outline-primary">
+            Send information
           </button>
-
-          <Link to="/experience">
-            <button className="btn btn-primary">Next &raquo;</button>
-          </Link>
-          {/* <Link to="">
-            <button className="next">Next &raquo;</button>
-          </Link> */}
-        </div>
-
-        <div>
+          <br />
           <input
+            className="btn btn-outline-secondary"
             type="reset"
-            value="Add another work"
-            className="btn btn-dark"
+            value="Add another education"
           />
+          <br />
+          <div>
+            <Link to="/aboutme">
+              <button href="#" className="btn btn-outline-dark">
+                &laquo; Previous
+              </button>
+            </Link>
+
+            <Link to="/experience">
+              <button className="btn btn-outline-dark">Next &raquo;</button>
+            </Link>
+          </div>
         </div>
       </form>
     </div>

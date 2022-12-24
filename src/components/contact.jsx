@@ -18,8 +18,18 @@ function Contact(props) {
   console.log(formik.values);
   return (
     <React.Fragment>
+      <p
+        style={{
+          display: "flex",
+          flexFlow: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="h2"
+      >
+        Contact
+      </p>
       <form onSubmit={(ev) => props.pushInfo(ev, formik.values)}>
-        <h1>Contact</h1>
         <div className="input-group mb-3">
           <span className="input-group-text" id="basic-addon1">
             full name
@@ -128,16 +138,20 @@ function Contact(props) {
             onChange={formik.handleChange}
           />
         </div>
-        <div>
-          <button href="#" className="btn btn-primary">
-            &laquo; Previous
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <button type="submit" className="btn btn-outline-primary">
+            Send information
           </button>
-
-          <button type="submit" className="btn btn-success">
-            fill inputs;
-          </button>
-          <Link to="/aboutMe">
-            <button className="btn btn-primary">Next &raquo;</button>
+          <br />
+          <Link to="/start2/aboutMe">
+            <button className="btn btn-outline-dark">Next &raquo;</button>
           </Link>
         </div>
       </form>

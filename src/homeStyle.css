@@ -1,0 +1,201 @@
+.conteiner {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+
+}
+
+.bag {
+    position: fixed;
+    left: 48.5vw;
+    top: 1vh;
+}
+
+.body {
+    height: 82vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+}
+
+.examples {
+
+    font-family: "Sofia", sans-serif;
+    font-size: xx-large;
+    margin: 0;
+    margin-bottom: 1vh;
+
+}
+
+.photoWrap {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    gap: 20px
+}
+
+.ImgContainer {
+    position: relative;
+    width: 25vw;
+}
+
+.image {
+    width: 25vw;
+    height: 62vh;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 0.5px solid gray;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 13vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ImgContainer:hover .image {
+    opacity: 0.3;
+}
+
+.ImgContainer:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #1e2d47;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.ImgContainer2 {
+    position: relative;
+    width: 25vw;
+}
+
+.image2 {
+    width: 25vw;
+    height: 62vh;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /* margin-left: 20px; */
+    border: 0.5px solid gray;
+}
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 13vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ImgContainer2:hover .image2 {
+    opacity: 0.3;
+
+}
+
+.ImgContainer2:hover .middle2 {
+    opacity: 1;
+}
+
+.text2 {
+    background-color: #DE73FF;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.examples {
+
+    font-family: "Sofia", sans-serif;
+    font-size: xx-large;
+    margin: 0;
+    margin-bottom: 1vh;
+
+}
+
+
+
+
+
+
+li {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+li:first-child {
+    margin-left: 2vw;
+
+}
+
+footer {
+    padding-top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: max-content;
+
+}
+
+.content {
+
+    height: 50vh;
+    background-color: lightgray;
+}
+
+.container2 {
+    background-color: white;
+}
+
+.copyright,
+.impressum {
+    text-align: center;
+}
+
+.logo {
+    height: 6vh;
+    padding-top: 5%;
+}
+
+@media (max-width: 768px) {
+    li {
+        margin-left: 0;
+        margin-bottom: 1vh;
+    }
+
+    .sozial {
+        margin-bottom: 0;
+    }
+}
+
+#log {
+    width: fit-content;
+}
+
+.row {
+    margin-top: 0.7%;
+}

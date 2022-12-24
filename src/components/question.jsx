@@ -16,6 +16,10 @@ class Question extends Component {
       <Routes>
         <Route path="/" element={<Contact pushInfo={this.props.pushInfo} />} />
         <Route
+          path="/aboutMe"
+          element={<AboutMe pushAboutMe={this.props.pushAboutMe} />}
+        />
+        <Route
           path="/experience"
           element={
             <Experience
@@ -38,10 +42,6 @@ class Question extends Component {
               downlod={this.props.downlod}
             />
           }
-        />
-        <Route
-          path="/aboutMe"
-          element={<AboutMe pushAboutMe={this.props.pushAboutMe} />}
         />
       </Routes>
     );

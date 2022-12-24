@@ -1,7 +1,6 @@
 import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 import React from "react";
-import Education from "./educaion";
 
 function Aboutme(props) {
   const { pushAboutMe } = props;
@@ -14,40 +13,59 @@ function Aboutme(props) {
   console.log(formik.values);
   return (
     <React.Fragment>
-      <form onSubmit={(ev) => pushAboutMe(ev, formik.values)}>
-        <h1>Tell Somthing about you </h1>
-        <div className="input-group mb-3">
-          <div className="input-group mb-3">
-            <span className="input-group-text" id="basic-addon1">
-              about u
-            </span>
-            <input
-              type="text"
-              name="piska"
-              className="form-control"
-              placeholder=" somthing about u"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              onChange={formik.handleChange}
-              maxLength="116"
-              required
-            />
-          </div>
+      <p
+        style={{
+          display: "flex",
+          flexFlow: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="h2"
+      >
+        About Me
+      </p>
 
-          <Link to="/">
-            <button href="#" className="btn btn-primary">
-              &laquo; Previous
-            </button>
-          </Link>
-          <button type="submit" className="btn btn-success">
-            stik contact to page
+      <form onSubmit={(ev) => pushAboutMe(ev, formik.values)}>
+        <div className="input-group mb-3">
+          <span className="input-group-text" id="basic-addon1">
+            about u
+          </span>
+          <input
+            type="text"
+            name="piska"
+            className="form-control"
+            placeholder=" somthing about u"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            onChange={formik.handleChange}
+            maxLength="116"
+            required
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <button type="submit" className="btn btn-outline-primary">
+            Send information
           </button>
-          <Link to="/education">
-            <button className="btn btn-primary">Next &raquo;</button>
-          </Link>
-          {/* <Link to="">
-            <button className="next">Next &raquo;</button>
-          </Link> */}
+          <br />
+          <div style={{ gap: "1%" }}>
+            <Link to="/">
+              <button href="#" className="btn btn-outline-dark">
+                &laquo; Previous
+              </button>
+            </Link>
+
+            <Link to="/education">
+              <button className="btn btn-outline-dark">Next &raquo;</button>
+            </Link>
+          </div>
         </div>
       </form>
     </React.Fragment>

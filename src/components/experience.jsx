@@ -1,12 +1,9 @@
 import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 import React from "react";
-import Education from "./educaion";
-import Aboutme from "./aboutMe";
-import Skills from "./skills";
 
 function Experience(props) {
-  const { pushExperience } = props;
+  const { pushExperience, pushExperience2 } = props;
   const formik = useFormik({
     initialValues: {
       job: "",
@@ -17,11 +14,21 @@ function Experience(props) {
     },
   });
 
-  console.log(formik.values);
   return (
     <React.Fragment>
-      <h1>Experience </h1>
-      <form onSubmit={(ev) => pushExperience(ev, formik.values)}>
+      <p
+        style={{
+          display: "flex",
+          flexFlow: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="h2"
+      >
+        Experience
+      </p>
+
+      <form onSubmit={(ev) => pushExperience2(ev, formik.values)}>
         <div className="input-group mb-3">
           <span className="input-group-text" id="basic-addon1">
             job
@@ -93,34 +100,36 @@ function Experience(props) {
             maxLength="79"
           />
         </div>
-        <div>
-          <Link to="/education">
-            <button href="#" className="btn btn-primary">
-              &laquo; Previous
-            </button>
-          </Link>
 
-          {/* <button type="submit" className="next">
-            clear inputs
-          </button> */}
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <button type="submit" className="btn btn-outline-primary">
+            Send information
+          </button>
+          <br />
           <input
+            className="btn btn-outline-secondary"
             type="reset"
             value="Add another job"
-            className="btn btn-dark"
           />
-          <button
-            type="button"
-            onClick={(ev) => props.pushExperience2(ev, formik.values)}
-            className="btn btn-success"
-          >
-            stik contact to page
-          </button>
-          <Link to="/skills">
-            <button className="btn btn-primary">Next &raquo;</button>
-          </Link>
-          {/* <Link to="">
-            <button className="next">Next &raquo;</button>
-          </Link> */}
+          <br />
+          <div>
+            <Link to="/education">
+              <button href="#" className="btn btn-outline-dark">
+                &laquo; Previous
+              </button>
+            </Link>
+
+            <Link to="/skills">
+              <button className="btn btn-outline-dark">Next &raquo;</button>
+            </Link>
+          </div>
         </div>
       </form>
     </React.Fragment>
