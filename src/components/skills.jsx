@@ -154,7 +154,9 @@ function Skills(props) {
             className="form-control"
             aria-label="Username"
             aria-describedby="basic-addon1"
+            placeholder="Add Skill"
             onChange={formik.handleChange}
+            maxLength="10"
           />
         </div>
 
@@ -175,6 +177,8 @@ function Skills(props) {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            placeholder="Add languages or any other skill you would like"
+            maxLength="100"
           />
         </div>
 

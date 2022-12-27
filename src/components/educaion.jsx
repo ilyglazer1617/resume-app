@@ -37,6 +37,7 @@ const Education = (props) => {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            maxLength="20"
           />
         </div>
         <div className="input-group mb-3">
@@ -51,6 +52,7 @@ const Education = (props) => {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            maxLength="15"
           />
         </div>
         <div className="input-group mb-3">

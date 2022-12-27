@@ -41,6 +41,7 @@ function Experience(props) {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            maxLength="53"
           />
         </div>
         <div className="input-group mb-3">
@@ -55,6 +56,7 @@ function Experience(props) {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            maxLength="19"
           />
         </div>
         <div className="input-group mb-3">
@@ -69,6 +71,7 @@ function Experience(props) {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            maxLength="66"
           />
         </div>
         <div className="input-group mb-3">
@@ -83,6 +86,7 @@ function Experience(props) {
             aria-label="Username"
             aria-describedby="basic-addon1"
             onChange={formik.handleChange}
+            maxLength="15"
           />
         </div>
         <div className="input-group mb-3">

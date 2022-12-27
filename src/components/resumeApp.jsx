@@ -43,12 +43,14 @@ class ResumeApp extends Component {
     Iskill2: 0,
     Iskill3: 0,
     Ieducation: 0,
+    gTamplate: "m",
   };
   styleB = {
     position: "fixed",
     top: "3vh",
-    left: "44vw",
-    width: "50vw",
+    left: "55vw",
+    width: "42vw",
+    // width:50
     height: "87vh",
     border: "2px solid  rgb(83, 79, 79)",
     paddingLeft: "2.5%",
@@ -59,7 +61,8 @@ class ResumeApp extends Component {
     position: "fixed",
     top: "3vh",
     left: "6vw",
-    width: "35vw",
+    width: "45vw",
+    // width:35
     height: "87%",
     overflow: "auto",
     border: "2px solid rgb(83, 79, 79)",
@@ -100,6 +103,8 @@ class ResumeApp extends Component {
             languages3={this.state.languages3}
             aboutme={this.state.aboutme}
             Iskill={this.state.Iskill}
+            men={this.state.men}
+            gender={this.props.gender}
           />
         </div>
         <div style={this.footerStyle}>
