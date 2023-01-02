@@ -11,6 +11,7 @@ class Home extends Component {
     bodyTamplate: "photoWrap",
     costumTamplate: "costumHidden",
     img2Style: "image2",
+    img2women: "im",
   };
   render() {
     return (

@@ -9,7 +9,8 @@ class HomeBody extends Component {
     return (
       <body className="body">
         <p className="examples">examples & option</p>
-        <div className={this.props.tamplate}>
+        {/* <div className={this.props.tamplate}> */}
+        <div className="photoWrap ">
           <div className="placeHolder"></div>
           <div className="ImgContainer">
             <img src={MyImage} alt="" className="image" />
