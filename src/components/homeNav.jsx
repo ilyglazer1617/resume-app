@@ -42,6 +42,7 @@ class HomeNav extends Component {
                     <ul
                       class="dropdown-menu dropdown-menu-dark"
                       aria-labelledby="navbarDarkDropdownMenuLink"
+                      id="stylesWrap"
                     >
                       <li>
                         <Link
