@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../customStyle.css";
+import "./customStyle.css";
 
 class LiveView extends Component {
   state = {};

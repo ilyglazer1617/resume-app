@@ -150,7 +150,7 @@ function Contact(props) {
             Send information
           </button>
           <br />
-          <Link to="/start2/aboutMe">
+          <Link to="/start3/aboutMe">
             <button className="btn btn-outline-dark">Next &raquo;</button>
           </Link>
         </div>

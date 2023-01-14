@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import LiveView from "./liveView";
 import Question from "./question";
 import jsPDF from "jspdf";
-import "../App.css";
-import Home from "./home";
-import Footer from "./footer";
+import Home from "../home";
+import Footer from "../footer";
 class CustomApp extends Component {
   state = {
     contact: [

@@ -7,7 +7,7 @@ const CustomEdit = () => {
       <input type="color" />
       tabs
       <input type="color" />
-      <Link to={"/"}>
+      <Link to={"/start3"}>
         <button>ready to start</button>
       </Link>
     </div>

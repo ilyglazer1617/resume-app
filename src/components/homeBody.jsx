@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MyImage from "../cvImg4.jpg";
 import MyImage2 from "../cvImgGirl.jpg";
-import Costum from "../costum.jpg";
+import Custom from "../costum.jpg";
+import CustomEdit from "./customEdit";
 class HomeBody extends Component {
   state = {};
   render() {
@@ -76,7 +77,7 @@ class HomeBody extends Component {
               </div>
             </div>
             <div class="carousel-item" id="allImgWrap">
-              <img class="imgSty" src={Costum} alt="Third slide" />
+              <img class="imgSty" src={Custom} alt="Third slide" />
               <div className="image-text">
                 {" "}
                 <Link to="/start3">
@@ -131,6 +132,9 @@ class HomeBody extends Component {
               <span class="sr-only">Next</span>
             </a>
           </div>
+          {/* <div style={{ visibility: "hidden" }}>
+            <CustomEdit style={{ visibility: "hidden" }} />
+          </div> */}
         </div>
         {/* <div className="photoWrap ">
           <div className="placeHolder"></div>
@@ -202,6 +206,7 @@ export default HomeBody;
 // import MyImage from "../cvImg4.jpg";
 // import MyImage2 from "../cvImgGirl.jpg";
 // import Costum from "../costum.jpg";
+// import CustomEdit from './customEdit';
 // class HomeBody extends Component {
 //   state = {};
 //   render() {

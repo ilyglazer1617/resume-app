@@ -72,11 +72,30 @@ class HomeNav extends Component {
                           }}
                         >
                           <button
-                            class="dropdown-item ms-4"
+                            class="dropdown-item "
                             onClick={() => this.props.handleGender("m")}
                           >
                             Men style{" "}
                           </button>{" "}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/start3"
+                          style={{
+                            textDecoration: "none",
+                            marginLeft: "2vw",
+                          }}
+                        >
+                          <button
+                            class="dropdown-item pr-5"
+                            style={{
+                              paddingLeft: "9px",
+                              // marginLeft: "30px",
+                            }}
+                          >
+                            Custom
+                          </button>
                         </Link>
                       </li>
                     </ul>

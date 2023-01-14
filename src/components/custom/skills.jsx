@@ -187,7 +187,7 @@ function Skills(props) {
         </button>
       </form>
       <div>
-        <Link to="/start2/experience">
+        <Link to="/start3/experience">
           <button href="#" className="btn btn-outline-dark">
             &laquo; Previous
           </button>
