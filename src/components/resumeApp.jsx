@@ -50,7 +50,6 @@ class ResumeApp extends Component {
     top: "3vh",
     left: "55vw",
     width: "42vw",
-    // width:50
     height: "87vh",
     border: "2px solid  rgb(83, 79, 79)",
     paddingLeft: "2.5%",
@@ -62,7 +61,6 @@ class ResumeApp extends Component {
     top: "3vh",
     left: "6vw",
     width: "45vw",
-    // width:35
     height: "87%",
     overflow: "auto",
     border: "2px solid rgb(83, 79, 79)",
@@ -115,15 +113,11 @@ class ResumeApp extends Component {
   }
 
   downlod = () => {
-    // window.print();
-    // let h = this.styleC;
-    // let w = this.styleC;
     document.getElementById("page").style.height = "22.3cm";
     document.getElementById("page").style.width = "16cm";
     document.getElementById("page").style.top = "0";
     document.getElementById("page").style.left = "0";
 
-    // this.setState({ height: this.styleC.height, width: this.styleC.width });
     const doc = new jsPDF("portrait", "pt", "a4");
     doc.html(document.querySelector("#page")).then(() => {
       doc.save("doc.pdf");
@@ -131,12 +125,6 @@ class ResumeApp extends Component {
     setTimeout(() => {
       document.location.reload();
     }, 3000);
-
-    // document.getElementById("page").style.height = "87vh";
-    // document.getElementById("page").style.width = "30vw";
-    // document.getElementById("page").style.top = "3vh";
-    // document.getElementById("page").style.left = "9vw";
-    // this.setState({ height: this.styleC.height, width: this.styleC.width });
   };
 
   pushAboutMe = (event, values) => {
@@ -196,13 +184,11 @@ class ResumeApp extends Component {
   pushExperience2 = (ev, values) => {
     ev.preventDefault();
     if (this.state.I < 3) {
-      // console.log(values);
       this.state.experience.push({ ...values });
       this.setState({ experience: this.state.experience });
       console.log(this.state.experience);
       this.state.I++;
       this.setState({ I: this.state.I });
-      // console.log(this.state.I);
     }
   };
   pushExperience = (ev, values) => {

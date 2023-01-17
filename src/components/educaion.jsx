@@ -10,7 +10,6 @@ const Education = (props) => {
       c1: "",
     },
   });
-  // console.table(formik.values);
 
   return (
     <div>

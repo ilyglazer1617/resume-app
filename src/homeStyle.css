@@ -32,9 +32,7 @@
     font-size: xx-large;
     margin: 0;
     margin-bottom: 1vh;
-    /* position: fixed;
-    left: 41vw;
-    bottom: 81vh; */
+
 }
 
 .box {
@@ -49,40 +47,10 @@
     width: 100%;
     gap: 20px;
     visibility: visible;
-    /* transition: justify-content 0.8s; */
 
 }
 
-/* .photoWrapHidden {
-    display: flex;
-    right: 0;
-    flex-flow: row;
-    gap: 20px;
-    transition: justify-content 5s ease, all 2s ease-out;
-    justify-content: space-between;
-    width: 100%;
-    transition: all 0.8s ease-out;
-    visibility: hidden;
-    opacity: 0.01;
-    animation-name: moveaside;
-    animation-duration: 5s;
 
-    transition: opacity 5s;
-} */
-
-
-/* 
-@keyframes moveaside {
-    0% {
-        justify-content: center;
-    }
-
-    100% {
-        justify-content: space-between;
-        visibility: hidden;
-        opacity: 0.01;
-    }
-} */
 
 .placeHolder {
     height: 62vh;
@@ -141,9 +109,7 @@
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
-    /* margin-left: 20px; */
     border: 0.5px solid gray;
-
 }
 
 .image2Hidden {

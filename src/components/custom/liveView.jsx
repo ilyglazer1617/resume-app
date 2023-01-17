@@ -155,14 +155,6 @@ class LiveView extends Component {
       </React.Fragment>
     );
   }
-
-  // downlod = () => {
-  //   // window.print();
-  //   const doc = new jsPDF("portrait", "pt", [600, 800]);
-  //   doc.html(document.querySelector("#page1")).then(() => {
-  //     doc.save("doc.pdf");
-  //   });
-  // };
 }
 
 export default LiveView;
