@@ -12,4 +12,4 @@ we didn't found a good website that did this for free and this is how the idea o
 
 
 <h2> Run the project </h2>
-peppy-narwhal-4835e1.netlify.app
+<a href="peppy-narwhal-4835e1.netlify.app"> resume app </a>
