@@ -9,3 +9,7 @@ at the end of the process, you can download your CV as a pdf file FOR FREE!
 <h2> Why we did this project ? </h2>
 during the course, every student had to write his cv, and we looked on the web for a good website that will set the need.
 we didn't found a good website that did this for free and this is how the idea of the project came up
+
+
+<h2> Run the project </h2>
+peppy-narwhal-4835e1.netlify.app
